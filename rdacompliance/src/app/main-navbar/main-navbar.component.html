@@ -4,34 +4,47 @@
   <a class="navbar-brand" href="index.html">
     <img src="assets/img/logo.jpg" style="height: 70%; width: 70%;">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleMobileNav()" [ngClass]="{'collapsed' : toggleCollpase}" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(68, 218, 255);">
-    <span class="navbar-toggler-icon" style="background-color: rgba(128, 128, 128, 0.205); border-radius: 4px;"></span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleMobileNav()" [ngClass]="{'collapsed' : toggleCollpase}" [ngStyle]="styleMobileNav_DropDown()" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
+
+
+
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02" [ngClass]="{'show' : toggleCollpase}" [ngStyle]="styleMobileNav_Collapse()">
     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link home" href="#" id="nav-link1" [ngStyle]="styleMobileNav_Links()">Home</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="nav-link1" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link about" href="#" id="nav-link2" [ngStyle]="styleMobileNav_Links()">Certification Steps</a>
+        <a class="nav-link" href="#" id="nav-link2" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Certification Steps</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link rgba-red-strong" href="#" id="nav-link3" [ngStyle]="styleMobileNav_Links()">Course Options</a>
+        <a class="nav-link" href="#" id="nav-link3" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Course Options</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"  target="_blank" id="nav-link4" [ngStyle]="styleMobileNav_Links()">Enroll Here</a>
+        <a class="nav-link" href="#"  target="_blank" id="nav-link4" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Enroll Here</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"  target="_blank" id="nav-link5" [ngStyle]="styleMobileNav_Links()">Course Login</a>
+        <a class="nav-link" href="#"  target="_blank" id="nav-link5" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Course Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"  target="_blank" id="nav-link6" [ngStyle]="styleMobileNav_Links()">Blog</a>
+        <a class="nav-link" href="#"  target="_blank" id="nav-link6" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"  target="_blank" id="nav-link7" [ngStyle]="styleMobileNav_Links()">Contact Us</a>
+        <a class="nav-link" href="#"  target="_blank" id="nav-link7" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Contact Us</a>
       </li>
     </ul>
   </div>
+
+  <img src="assets/img/navbar_bg.png" style="height: 70%; width: 100%; position: absolute; z-index: -1; top: 0;">
+
+  <div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+    <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+  </div>
+
+  <button (click)="toggle()">Toggle Open/Close</button>
 </nav>
+
+
 
 
