@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) 
+{
+    .headerText_phonenum {
+        position: absolute;
+        top: -1;
+        margin-left: 300px;
+        color: #004AAD;
+    }
+
+    .headerText_slogan {
+        position: absolute;
+        top: -1;
+        margin-left: 300px;
+        margin-top: 80px;
+    }
+
+    .headerText_phonenum_mobile {
+        display: none;
+      }
+    
+      .headerText_slogan_mobile {
+        display: none;
+      }
+}
+
+
+@media screen and (max-width: 768px) 
+{
+ .navBarImg {
+    display: none;
+  }
+
+    .headerText_phonenum {
+        display: none;
+    }
+
+    .headerText_slogan {
+        display: none;
+    }
+
+  .headerText_phonenum_mobile {
+    position: absolute;
+    z-index: 9999;
+    font-size: 30px;
+    top: -1;
+    margin-left: 50px;
+    margin-top: 180px;
+    color: #004AAD;
+    display: block;
+  }
+
+  .headerText_slogan_mobile {
+    position: absolute;
+    z-index: 9999;
+    top: -1;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 220px;
+    display: block;
+  }
+
+  .navbar-toggler {
+      margin-top: 100px;
+  }
+ 
+}
+

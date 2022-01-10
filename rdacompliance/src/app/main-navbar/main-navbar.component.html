@@ -4,46 +4,44 @@
   <a class="navbar-brand" href="index.html">
     <img src="assets/img/logo.jpg" style="height: 70%; width: 70%;">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleMobileNav()" [ngClass]="{'collapsed' : toggleCollpase}" [ngStyle]="styleMobileNav_DropDown()" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" style="transition:1s ease all;" (click)="toggleMobileNav()" [ngClass]="{'collapsed' : toggleCollpase}" [ngStyle]="styleMobileNav_DropDown()" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
-
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02" [ngClass]="{'show' : toggleCollpase}" [ngStyle]="styleMobileNav_Collapse()">
-    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#" id="nav-link1" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Home</a>
+        <a class="nav-link" href="#" id="nav-link1" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8'; this.style.textDecoration='underline'" onMouseOut="this.style.color='white'; this.style.textDecoration='none'">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" id="nav-link2" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Certification Steps</a>
+        <a class="nav-link" href="#" id="nav-link2" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8'; this.style.textDecoration='underline'" onMouseOut="this.style.color='white'; this.style.textDecoration='none'">Certification Steps</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" id="nav-link3" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Course Options</a>
+        <a class="nav-link" href="#" id="nav-link3" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8'; this.style.textDecoration='underline'" onMouseOut="this.style.color='white'; this.style.textDecoration='none'">Course Options</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"  target="_blank" id="nav-link4" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Enroll Here</a>
+        <a class="nav-link" href="#"  target="_blank" id="nav-link4" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8'; this.style.textDecoration='underline'" onMouseOut="this.style.color='white'; this.style.textDecoration='none'">Enroll Here</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"  target="_blank" id="nav-link5" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Course Login</a>
+        <a class="nav-link" href="#"  target="_blank" id="nav-link5" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8'; this.style.textDecoration='underline'" onMouseOut="this.style.color='white'; this.style.textDecoration='none'">Course Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"  target="_blank" id="nav-link6" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Blog</a>
+        <a class="nav-link" href="#"  target="_blank" id="nav-link6" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8'; this.style.textDecoration='underline'" onMouseOut="this.style.color='white'; this.style.textDecoration='none'">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"  target="_blank" id="nav-link7" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8';" onMouseOut="this.style.color='white';">Contact Us</a>
+        <a class="nav-link" href="#"  target="_blank" id="nav-link7" [ngStyle]="styleMobileNav_Links()" onMouseOver="this.style.color='#C8C8C8'; this.style.textDecoration='underline'" onMouseOut="this.style.color='white'; this.style.textDecoration='none'">Contact Us</a>
       </li>
     </ul>
   </div>
 
-  <img src="assets/img/navbar_bg.png" style="height: 70%; width: 100%; position: absolute; z-index: -1; top: 0;">
+  <h1 class="headerText_phonenum">(610) 810-1778</h1>
+  <h5 class="headerText_slogan">Serving Pennsylvania and New Jersey</h5>
 
-  <div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
-    <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
-  </div>
-
-  <button (click)="toggle()">Toggle Open/Close</button>
+  <img src="assets/img/navbar_bg.png" class="navBarImg" style="height: 70%; width: 100%; position: absolute; z-index: -1; top: 0;">
 </nav>
+
+<h1 class="headerText_phonenum_mobile">(610) 810-1778</h1>
+<h5 class="headerText_slogan_mobile">Serving Pennsylvania and New Jersey</h5>
 
 
 
