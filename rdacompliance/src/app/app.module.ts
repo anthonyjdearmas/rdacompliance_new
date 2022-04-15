@@ -4,14 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MainNavbarComponent } from './main-navbar/main-navbar.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainNavbarComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

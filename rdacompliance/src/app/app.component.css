@@ -1,0 +1,6 @@
+.image{
+  margin-top: 500px;
+  height:40em; background-size:cover; width:auto;
+  background-image:url('/assets/img/app/background.png');
+  background-position:50% 50%;
+}
