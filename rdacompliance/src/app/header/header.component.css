@@ -1,7 +1,7 @@
 
 .logoimg {
     margin-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
     left: 0;
     width: 45%;
     position: absolute;
@@ -68,6 +68,7 @@ li > a:hover:after{
     .logoimg_mobile {
         width: 130%;
         display: block;
+        margin-top: 15px;
     }
 
     .bg-custom-2 {
