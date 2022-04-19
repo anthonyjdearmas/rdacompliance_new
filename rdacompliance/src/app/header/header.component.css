@@ -1,6 +1,5 @@
-
 .logoimg {
-    margin-top: 50px;
+    margin-top: 60px;
     padding-bottom: 18px;
     left: 0;
     width: 45%;
@@ -91,3 +90,19 @@ li > a:hover:after{
         border-radius: 4px;
     }
 }
+
+/* BIG ZONE - All CSS here is reponsible for mobile devices >= 1669px in width*/
+@media screen and (min-width: 1669px) {
+    .logoimg {
+        margin-top: 68px;
+        padding-bottom: 20px;
+        left: 0;
+        width: 45%;
+        position: absolute;
+    }
+
+    .navbar-nav > li{
+        padding-top: 30px;
+      }
+    
+  }
