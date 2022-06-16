@@ -1,8 +1,9 @@
 .logoimg {
-    margin-top: 60px;
+    margin-top: 3vw;
     padding-bottom: 18px;
     left: 0;
-    width: 45%;
+    width: 50vw;
+    height: 16vh;
     position: absolute;
 }
 
@@ -11,7 +12,7 @@
 }
 
 .navbar-nav > li{
-    padding-top: 10px;
+    padding-top: 1vh;
   }
 
 .bg-custom-2 {
@@ -20,12 +21,17 @@
 
 .navbar-nav .nav-item .nav-link {
     color: white;
-    padding-right: 25px;
+    font-size: 1vw;
 }
 
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link .btn {
     color: grey;
+}
+
+.loginbtn {
+    font-size: 1vw;  
+    margin-left: 0.75vw;
 }
 
 li > a:after{
@@ -57,7 +63,7 @@ li > a:hover:after{
     background-color: transparent;
 }
 
-/* MOBILE ZONE - All CSS here is reponsible for mobile devices <= 768px in width*/
+/* PHONE ZONE - All CSS here is reponsible for mobile devices <= 768px in width*/
 @media screen and (max-width: 768px) 
 {
     .logoimg {
@@ -91,7 +97,41 @@ li > a:hover:after{
     }
 }
 
-/* BIG ZONE - All CSS here is reponsible for mobile devices >= 1669px in width*/
+/* TABLET ZONE - All CSS here is responsible for tablet devices*/
+@media screen and (max-width: 829px) 
+{
+    .logoimg {
+        display: none;
+    }
+
+    .logoimg_mobile {
+        width: 80%;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .bg-custom-2 {
+        background-image: linear-gradient(15deg, #ffffff 0%, #ffffff 100%);
+    }
+
+    .navbar-toggler {
+        color: #000;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: grey;
+        padding-left: 10px;
+    }
+    
+    .navbar-nav .nav-item.active .nav-link,
+    .navbar-nav .nav-item:hover .nav-link {
+        color: black;
+        background-color: rgba(0, 132, 255, 0.2);
+        border-radius: 4px;
+    }
+}
+
+/* BIG ZONE - All CSS here is reponsible for large monitors >= 1669px in width*/
 @media screen and (min-width: 1669px) {
     .logoimg {
         margin-top: 68px;
