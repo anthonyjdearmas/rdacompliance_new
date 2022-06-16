@@ -6,17 +6,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link">Home</a>
+        </li>
+        <li class="nav-item" routerLink="/coursefinder" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link">Course Options</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Certification Steps</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Course Options</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Enroll Here</a>
+          <a class="nav-link" href="">Enroll Here</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>

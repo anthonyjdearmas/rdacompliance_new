@@ -13,7 +13,7 @@
 
 .navbar-nav > li{
     padding-top: 1vh;
-  }
+}
 
 .bg-custom-2 {
     background-image: linear-gradient(15deg, #13547a 0%, #0066ff 100%);
@@ -63,15 +63,23 @@ li > a:hover:after{
     background-color: transparent;
 }
 
+.nav-item {
+    cursor: pointer;
+}
+
 /* PHONE ZONE - All CSS here is reponsible for mobile devices <= 768px in width*/
 @media screen and (max-width: 768px) 
 {
+    .navbar-nav .nav-item .nav-link {
+        color: white;
+        font-size: 1vw;
+    }
+
     .logoimg {
         display: none;
     }
 
     .logoimg_mobile {
-        width: 130%;
         display: block;
         margin-top: 15px;
     }
@@ -87,6 +95,7 @@ li > a:hover:after{
     .navbar-nav .nav-item .nav-link {
         color: grey;
         padding-left: 10px;
+        font-size: 3vw;
     }
     
     .navbar-nav .nav-item.active .nav-link,
