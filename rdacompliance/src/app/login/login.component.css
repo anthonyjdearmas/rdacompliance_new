@@ -17,3 +17,9 @@ hr {
 h1, p, a {
     color: white;
 }
+
+.loginpage_background {
+    /* Make background color have a linear gradient */
+    background: linear-gradient(0deg, #146da0 0%, #0066ff 50%);
+    
+}
