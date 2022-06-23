@@ -143,7 +143,7 @@ li > a:hover:after{
 /* BIG ZONE - All CSS here is reponsible for large monitors >= 1669px in width*/
 @media screen and (min-width: 1669px) {
     .logoimg {
-        margin-top: 68px;
+        margin-top: 6.2vh;
         padding-bottom: 20px;
         left: 0;
         width: 45%;
