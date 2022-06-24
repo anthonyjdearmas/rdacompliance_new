@@ -1,6 +1,6 @@
 {
   "host": "localhost",
   "user": "root",
-  "database": "posts",
+  "database": "rdacompliance",
   "password": "mollygirl1"
 }

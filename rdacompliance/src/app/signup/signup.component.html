@@ -1,1 +1,19 @@
-<p>signup works!</p>
+<div class="container text-center" style="margin-top: 250px;">
+
+    <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate>
+        <label>First name:</label><br>
+        <input type="text"  name="fname" formControlName="name" id="fname" value="Name"><br>
+
+        <label>Email:</label><br>
+        <input type="text"  name="email" formControlName="email" id="email" value="Email"><br>
+
+        <label>Password:</label><br>
+        <input type="password"  name="password" formControlName="password" id="password" value="Password"><br>
+
+        <!-- 
+            NOTE: Buttons inside forms have type submit by default.
+            So ngSubmit binds to this button and calls signup 
+        -->
+        <button [disabled]="!signupForm.valid">Sign Up</button>
+    </form>
+</div>
