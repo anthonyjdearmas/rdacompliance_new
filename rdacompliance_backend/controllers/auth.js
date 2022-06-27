@@ -5,6 +5,10 @@ const jwt = require('jsonwebtoken');
 
 const User = require('../models/user');
 
+exports.httptestfunc = async (req, res, next) => {
+  res.send({message: 'No blah Found'});
+}
+
 exports.signup = async (req, res, next) => {
   const errors = validationResult(req);
 
