@@ -1,0 +1,5 @@
+cd rdacompliance
+npm start
+
+cd rdacompliance_backend
+npm start
