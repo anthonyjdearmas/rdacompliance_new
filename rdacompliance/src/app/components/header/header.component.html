@@ -1,9 +1,10 @@
-<nav class="navbar navbar-expand-lg bg-custom-2" style="padding-bottom: 25px;" [ngClass]="this.user_screenWidth > 829 ? 'navbar-dark' : 'navbar-light'">
-    <img src="assets/img/navbar/logo.png" alt="" class="nav-brand logoimg_mobile" href="#">
-
+<nav class="navbar navbar-expand-lg bg-custom-2" [ngClass]="this.user_screenWidth > 900 ? 'navbar-dark' : 'navbar-light'">
+    <img src="assets/img/navbar/logo.png" alt="" class="nav-brand logoimg" href="#" >
+    <img src="assets/img/navbar/logo.png" alt="" class="nav-brand logoimg_mobile">
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon" style="color: black;"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
@@ -13,22 +14,21 @@
           <a class="nav-link">Course Options</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Enroll Here</a>
+          <a class="nav-link">Enroll Here</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link">Contact Us</a>
         </li>
         <li class="nav-item" routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" id="mobile_login_btn">
           <a class="nav-link">Course Login</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" style="padding-left: 5px;">
           <button type="button" class="btn btn-outline-light bi-arrow-up-right-circle" id ="login_btn"
           routerLink="/login" routerLinkActive="disabled" [routerLinkActiveOptions]="{exact: true}">  Course Login</button>
         </li>
       </ul>
 
 <!-- Navbrand image -->
-<img src="assets/img/navbar/logo.png" alt="" class="logoimg" href="#" >

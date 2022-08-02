@@ -6,20 +6,15 @@
     border-radius: 10px;
 }
 
-label {
-    color: white;
-}
-
 hr {
     border-color: white;
 }
 
-h1, p, a {
+h1, p, a, label {
     color: white;
 }
 
 .loginpage_background {
-    /* Make background color have a linear gradient */
     background: linear-gradient(0deg, #146da0 0%, #0066ff 50%);
     
 }
