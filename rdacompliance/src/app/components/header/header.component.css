@@ -67,6 +67,10 @@ li > a:hover:after{
     cursor: pointer;
 }
 
+#mobile_login_btn { 
+    display: none;
+}
+
 /* PHONE ZONE - All CSS here is reponsible for mobile devices <= 768px in width*/
 @media screen and (max-width: 768px) 
 {
@@ -104,6 +108,14 @@ li > a:hover:after{
         background-color: rgba(0, 132, 255, 0.2);
         border-radius: 4px;
     }
+
+    #login_btn {
+        display: none;
+    }
+
+    #mobile_login_btn { 
+        display: block;
+    }
 }
 
 /* TABLET ZONE - All CSS here is responsible for tablet devices*/
@@ -138,6 +150,14 @@ li > a:hover:after{
         background-color: rgba(0, 132, 255, 0.2);
         border-radius: 4px;
     }
+
+    #login_btn {
+        display: none;
+    }
+
+    #mobile_login_btn { 
+        display: block;
+    }
 }
 
 /* BIG ZONE - All CSS here is reponsible for large monitors >= 1669px in width*/
@@ -152,6 +172,10 @@ li > a:hover:after{
 
     .navbar-nav > li{
         padding-top: 30px;
-      }
+    }
+
+    #mobile_login_btn { 
+        display: none;
+    }
     
   }

@@ -21,8 +21,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
         </li>
+        <li class="nav-item" routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" id="mobile_login_btn">
+          <a class="nav-link">Course Login</a>
+        </li>
         <li class="nav-item">
-          <button type="button" class="btn btn-outline-light bi-arrow-up-right-circle loginbtn"
+          <button type="button" class="btn btn-outline-light bi-arrow-up-right-circle" id ="login_btn"
           routerLink="/login" routerLinkActive="disabled" [routerLinkActiveOptions]="{exact: true}">  Course Login</button>
         </li>
       </ul>
